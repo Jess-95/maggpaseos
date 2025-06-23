@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Tahoma, sans-serif;
+    transition: transform 0.3s ease
+}
+
+h3 {font-size: 2em;}
+h5{font-size: 1.5em;}
+p{font-size: 1em;}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 312px;
+    background: rgb(148, 255, 18);
+}
+
+main{
+    padding: 5px;
+    margin: auto;
+    background: rgb(228, 228, 216);
+}
+
+.titulo{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/perro4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: rgb(255, 255, 255);
+    border-radius: 5pc;
+}
+
+.titulo h1{
+    text-align: center;
+    font-size: 3em;
+} 
+
+.into{
+  padding: 200px 5px;
+  text-align: center;
+  /*
+  background-image: linear-gradient(
+        0deg,
+        rgba(255, 252, 252, 0.6),
+        rgba(237, 233, 233, 0.6)
+    )
+    ,url(/img/fonf.jpg);
+    border-radius: 2pc;
+}
+    */
+}
+
+article{
+    padding: 20px;
+
+}
+
+/*perfiles de los integrantes */
+
+.integrantes{
+    text-align: center;
+
+}
+.into2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#art1{
+   display: flex;
+   flex-direction: row-reverse;
+
+   align-items: center;
+   align-content: center;
+   padding: 60px 50px;
+   }
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+    text-align: center;
+
+}
+
+.divfoto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+}
+
+.foto{
+    max-width: 100%;
+    border-radius: 100em;
+    display: flex;
+    justify-content: flex-end;
+    Overflow: hidden;
+}
+
+
+
+footer{
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   
+
+}
