@@ -69,24 +69,24 @@ article{
 
 /*perfiles de los integrantes */
 
-.integrantes{
-    text-align: center;
-
-}
 .into2{
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 
+.integrantes{
+    text-align: center;
+}
 
-
-#art1{
+ /*perfiles DERECHA*/
+.art1{
    display: flex;
    flex-direction: row-reverse;
-
    align-items: center;
    align-content: center;
    padding: 60px 50px;
+   background-color: rgb(151, 151, 242);
    }
 
 .perfil{
@@ -95,7 +95,6 @@ article{
     justify-content: flex-end;
     width: 60%;
     text-align: center;
-
 }
 
 .divfoto{
@@ -113,7 +112,20 @@ article{
     Overflow: hidden;
 }
 
+.perfil p{
+    margin: 10px;
+}
+/*PERFILEs IZQUIERDA*/
 
+.art2{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+   padding: 60px 50px;
+   }
+
+/*fin perfiles de los integrantes */
 
 footer{
    height: 200px;
@@ -121,6 +133,65 @@ footer{
    justify-content: center;
    align-items: center;
    text-align: center;
-   
+}
+
+/*Estilos para pag min 780px*/
+@media screen and (min-width: 550px) and (max-width:800px){
+
+
+    #int article{
+   width: 400px;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   align-content: center;
+   padding: 50px 10px;
+   background-color: rgb(151, 151, 242);
+   margin: auto;
+   margin-top: 50px;
+   border-radius: 50px;
+}
+
+.divfoto{
+    margin-bottom: 20px;
+}
+
+.perfil p {
+    margin: 0px;
+}
+}
+
+
+/*Estilos para pag min 780px*/
+@media screen and (min-width: 801px){
+
+#int{
+width: 100%;
+margin: 10px;
+padding: 0px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+#int article{
+  margin: 20px;
+  width: 400px;
+   display: flex;
+   flex-direction: column-reverse;
+   padding: 30px;
+   padding-bottom: 50px;
+   background-color: rgb(151, 151, 242);
+   border-radius: 50px;
+}
+
+.divfoto{
+    margin-bottom: 20px;
+}
+
+.perfil p {
+    margin: 0px;
+}
 
 }
