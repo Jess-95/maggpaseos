@@ -5,3 +5,156 @@
     font-family:Verdana, Tahoma, sans-serif;
     transition: transform 0.3s ease
 }
+
+h3 {font-size: 2em;}
+h5 {font-size: 1.5em;}
+p {font-size: 1em;}
+ul {list-style-type: none;}
+
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 312px;
+    background: rgb(148, 255, 18);
+}
+main{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(228, 228, 216);
+}
+
+.titulo{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/perro4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: rgb(255, 255, 255);
+    border-radius: 5pc;
+
+}
+.titulo h1{
+    text-align: center;
+    font-size: 3em;
+} 
+
+/*REQISITOS*/
+
+#requisito{
+  height: 90vh;
+  margin-top: 110px;
+ display: flex;
+ flex-direction: column;
+   background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/perro5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: rgb(255, 255, 255);
+ 
+}
+
+.requisito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.importante{
+    width: 80vw;
+   padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    background-color:rgb(156, 209, 168);
+}
+
+/*fin requisits*/
+
+#temas{
+    height: 390vh;
+    padding: 300px 10px;
+}
+
+#temas h3{
+    text-align: center;
+    padding: 10px;
+}
+.div-cast{
+    width: 500vw;
+    padding: 10px;
+}
+
+.img-cast{
+    width: 90vw;
+}
+
+
+.div-inv{
+    width: 500vw;
+     padding: 10px;
+}
+
+.img-inv{
+    width: 90vw;
+}
+
+.div-ver{
+    width: 500vw;
+     padding: 10px;
+}
+
+.img-ver{
+    width: 90vw;
+}
+
+/*fin tema*/
+
+/* OTROS*/
+
+#otros{
+  height: 190vh;
+  padding: 300px 5px;
+}
+
+#otros h3{
+    text-align: center;
+    padding: 10px;
+
+}
+
+/* FIN OTROS*/
+/* IMPORTANTE*/
+#importante{
+  height: 50vh;
+  padding: 30px;
+  background-color: brown;
+  color: beige;
+
+}
+
+#importante h3 {
+ text-align: center;
+}
+
+/* FIN IMPORTANTe*/
+#preguntas{
+  height: 90vh;
+  padding: 300px 5px;
+}
