@@ -22,7 +22,15 @@ ul {list-style-type: none;}
 main{
     margin: 0px;
     padding: 0px;
-    background: rgb(228, 228, 216);
+    background-image: linear-gradient(
+        0deg,
+        rgba(242, 239, 239, 0.805),
+        rgba(255, 255, 255, 0.892)
+    )
+    ,url(/img/fonf.jpg);
+   
+    background-repeat: repeat;
+    
 }
 
 .titulo{
@@ -51,7 +59,7 @@ main{
 /*REQISITOS*/
 
 #requisito{
-  height: 90vh;
+  height: 100vh;
   margin-top: 110px;
  display: flex;
  flex-direction: column;
@@ -68,6 +76,10 @@ main{
  
 }
 
+#requisito h3{
+    margin: 10px;
+}
+
 .requisito{
     display: flex;
     flex-direction: column;
@@ -81,47 +93,93 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: black;
-    background-color:rgb(156, 209, 168);
+    border: solid 1px beige;
+    background-color:brown;
 }
 
 /*fin requisits*/
 
+/*TEMA*/
+
 #temas{
-    height: 390vh;
+    height: 3600px;
     padding: 300px 10px;
+    
+}
+
+.div-temas{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+}
+
+
+    /*ART1 ES PARA TEMA Y PARA OTRS TEMA*/
+.art1{
+    margin: 10px;
+    padding: 10px 10px;
+    background:rgba(151, 151, 242, 0.5);
+   
+
 }
 
 #temas h3{
     text-align: center;
     padding: 10px;
 }
+
+/*img castracuion*/
 .div-cast{
-    width: 500vw;
-    padding: 10px;
+   margin: 5px;
+    overflow: hidden;
 }
 
 .img-cast{
-    width: 90vw;
+    max-width: 100%;
 }
 
+/*img lluvia*/
+.div-lluvia{
+   margin: 5px;
+    overflow: hidden;
+    
+}
 
+.img-lluvia{
+    max-width: 100%;
+}
+
+/*img inviern*/
 .div-inv{
-    width: 500vw;
-     padding: 10px;
+     margin: 5px;
+    overflow: hidden;
 }
 
 .img-inv{
     width: 90vw;
+    max-width: 100%
+    
 }
 
+/*img verano*/
 .div-ver{
-    width: 500vw;
-     padding: 10px;
+     margin: 5px;
+    overflow: hidden;   
 }
 
 .img-ver{
     width: 90vw;
+    max-width: 100%
+}
+/*img hora*/
+.div-hora{
+   margin: 5px;
+    overflow: hidden;
+}
+
+.img-hora{
+     width: 90vw;
+    max-width: 100%;
 }
 
 /*fin tema*/
@@ -129,9 +187,11 @@ main{
 /* OTROS*/
 
 #otros{
-  height: 190vh;
+  height: 250vh;
   padding: 300px 5px;
+  overflow: hidden;
 }
+
 
 #otros h3{
     text-align: center;
@@ -142,9 +202,9 @@ main{
 /* FIN OTROS*/
 /* IMPORTANTE*/
 #importante{
-  height: 50vh;
+  height: 30%;
   padding: 30px;
-  background-color: brown;
+  background-color: rgb(165, 42, 42);
   color: beige;
 
 }
@@ -156,4 +216,91 @@ main{
 /* FIN IMPORTANTe*/
 #preguntas{
   padding: 200px 5px;
+}
+
+
+
+
+/*Estilos para pag min 801px*/
+@media screen and (min-width: 750px)and (max-width:1024px){
+#requisito{
+    height: 50%;
+      padding-left: 50%;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+
+}
+
+.requisito{
+   padding: 10px ;
+}
+.importante{
+    width: 100%;
+    padding: 10px;
+}
+
+/*fin reqisits*/
+/*TEMAS*/
+#temas{
+ height: 50%;
+ padding: 10px 10px;
+}
+
+.art1{
+    width: 500px;
+}
+/*FIN TEMA*/
+/*OTRS*/
+
+
+.div-otros{
+     display: flex;
+     justify-content: space-evenly;
+}
+}
+
+/*FIN OTROS*/
+
+
+/*Estilos para pag min 1025px*/
+@media screen and (min-width: 1025px){
+
+#requisito{
+    height: 50%;
+      padding-left: 50%;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+}
+
+.requisito{
+   padding: 10px ;
+}
+.importante{
+    width: 100%;
+    padding: 10px;
+}
+
+/*fin reqisits*/
+/*TEMAS*/
+#temas{
+ height: 50%;
+
+}
+
+.art1{
+    width: 700px;
+}
+/*FIN TEMA*/
+/*OTRS*/
+
+
+.div-otros{
+     display: flex;
+     justify-content: space-evenly;
+}
+
+/*FIN OTROS*/
+
 }

@@ -21,7 +21,15 @@ p{font-size: 1em;}
 main{
     padding: 5px;
     margin: auto;
-    background: rgb(228, 228, 216);
+    background-image: linear-gradient(
+        0deg,
+        rgba(242, 239, 239, 0.805),
+        rgba(255, 255, 255, 0.892)
+    )
+    ,url(/img/fonf.jpg);
+   
+    background-repeat: repeat;
+    
 }
 
 .titulo{
@@ -52,16 +60,6 @@ main{
 .nosotros{
   padding: 200px 5px;
   text-align: center;
-  /*
-  background-image: linear-gradient(
-        0deg,
-        rgba(255, 252, 252, 0.6),
-        rgba(237, 233, 233, 0.6)
-    )
-    ,url(/img/fonf.jpg);
-    border-radius: 2pc;
-}
-    */
 }
 
 .artnosotros{
@@ -76,7 +74,7 @@ main{
 }
 article{
     padding: 20px;
-    background:rgb(151, 151, 242);
+    background:rgba(151, 151, 242, 0.5);
 }
 
 /* BARRIOSQ*/
